@@ -8,3 +8,8 @@ Contact przez email smcebi.
 
 Napisanie jednej aplikacji na każdych zajęciach.
 Do następnego tygodnia dobrać się w pary lub praca indywidualna.
+
+----------------------------------------------------------------
+
+Kompilacja pliku java do pliku class:
+javac filename

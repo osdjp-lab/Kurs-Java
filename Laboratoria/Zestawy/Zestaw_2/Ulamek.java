@@ -1,3 +1,5 @@
+package Laboratoria.Zestawy.Zestaw_2;
+
 /**
  * Zawiera parametry opisujące ułamek.
  * @param licznik licznik ułamka.

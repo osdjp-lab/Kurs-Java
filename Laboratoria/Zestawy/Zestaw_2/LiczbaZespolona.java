@@ -1,3 +1,5 @@
+package Laboratoria.Zestawy.Zestaw_2;
+
 /**
  * Zawiera parametry opisujące liczbę zespoloną.
  * @param real część rzeczywista liczby zespolonej.

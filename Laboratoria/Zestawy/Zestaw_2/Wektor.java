@@ -1,3 +1,5 @@
+package Laboratoria.Zestawy.Zestaw_2;
+
 /**
  * Zawiera parametry opisujące wektor w przestrzeni 3-wymiarowej.
  * @param x współrzędna x wektora.
@@ -29,7 +31,7 @@ public class Wektor
      * @return obiekt typu Wektor.
      */
     Wektor IloczynSkalarny(Wektor obj) {
-
+        return new Wektor();
     }
 
     /**
@@ -37,6 +39,6 @@ public class Wektor
      * @return obiekt typu Wektor.
      */
     Wektor IloczynWektorowy(Wektor obj) {
-
+        return new Wektor();
     }
 }

@@ -1,3 +1,5 @@
+package Laboratoria.Zestawy.Zestaw_1;
+
 /**
  * Zawiera parametry opisujące punkt w przestrzeni 2-wymiarowej.
  * @param x współrzędna x.

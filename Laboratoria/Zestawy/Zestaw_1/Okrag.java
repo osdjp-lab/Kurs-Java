@@ -1,3 +1,5 @@
+package Laboratoria.Zestawy.Zestaw_1;
+
 /**
  * Zawiera parametry opisujące okrąg w przestrzeni 2-wymiarowej.
  * @param promien promień okręgu.

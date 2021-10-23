@@ -1,3 +1,5 @@
+package Laboratoria.Zestawy.Zestaw_1;
+
 /**
  * Zawiera parametry opisujące prostokąt w przestrzeni 2-wymiarowej.
  * @param dlugosc długość poziomego boku prostokąta.

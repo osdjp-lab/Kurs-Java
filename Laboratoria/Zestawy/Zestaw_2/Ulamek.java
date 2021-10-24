@@ -50,7 +50,7 @@ public class Ulamek
 
     /**
      * Realizuje operację dodawania ułamków.
-     * @return obiekt typu Ulamek będący sumą ułamku podanego i ułamku którego metoda jest wywoływana.
+     * @return obiekt typu Ulamek będący sumą ułamka podanego i ułamka którego metoda jest wywoływana.
      */
     Ulamek plus(Ulamek obj) {
         if (mianownik == obj.mianownik) {
@@ -62,7 +62,7 @@ public class Ulamek
 
     /**
      * Realizuje operację odejmowania ułamków.
-     * @return obiekt typu Ulamek będący różnicą ułamku podanego i ułamku którego metoda jest wywoływana.
+     * @return obiekt typu Ulamek będący różnicą ułamka podanego i ułamka którego metoda jest wywoływana.
      */
     Ulamek minus(Ulamek obj) {
         if (mianownik == obj.mianownik) {
@@ -74,7 +74,7 @@ public class Ulamek
 
     /**
      * Realizuje operację mnożenia ułamków.
-     * @return obiekt typu Ulamek będący iloczynem ułamku podanego i ułamku którego metoda jest wywoływana.
+     * @return obiekt typu Ulamek będący iloczynem ułamka podanego i ułamka którego metoda jest wywoływana.
      */
     Ulamek razy(Ulamek obj) {
         if (mianownik == obj.mianownik) {
@@ -82,6 +82,15 @@ public class Ulamek
         } else {
             return new Ulamek(licznik*obj.licznik, mianownik*obj.mianownik);
         }
+    }
+
+    /**
+     * Realizuje operację dzielenia ułamków.
+     * @return obiekt typu Ulamek będący iloczynem ułamka podanego i ułamka którego metoda jest wywoływana.
+     */
+    Ulamek dziel(Ulamek obj) {
+        Ulamek obj2 = new Ulamek(obj.mianownik, obj.licznik);
+        return razy(obj2);
     }
 
     /**

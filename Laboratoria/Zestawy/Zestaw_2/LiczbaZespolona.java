@@ -5,19 +5,16 @@ package Laboratoria.Zestawy.Zestaw_2;
  * @param real część rzeczywista liczby zespolonej.
  * @param img część urojona liczby zespolonej.
  */
-public class LiczbaZespolona
-{
+public class LiczbaZespolona {
     double real;
     double img;
 
-    LiczbaZespolona()
-    {
+    LiczbaZespolona() {
         this.real = 0.0;
         this.img = 0.0;
     }
 
-    LiczbaZespolona(double real, double img)
-    {
+    LiczbaZespolona(double real, double img) {
         this.real = real;
         this.img = img;
     }
@@ -59,7 +56,6 @@ public class LiczbaZespolona
      * @return obiekt typu LiczbaZespolona.
      */
     LiczbaZespolona dziel(LiczbaZespolona obj) {
-        return new LiczbaZespolona(real*obj.real - img*obj.img, real*obj.img + obj.real*img);
+        return new LiczbaZespolona((real*obj.real + img*obj.img) / (Math.pow(obj.real, 2) + Math.pow(obj.img, 2)), (img*obj.real - real*obj.img) / (Math.pow(obj.real, 2) + Math.pow(obj.img, 2)));
     }
-
 }

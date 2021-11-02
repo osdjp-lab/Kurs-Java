@@ -1,9 +1,8 @@
-// package Laboratoria.Zestawy.Zestaw_3;
-
 import java.io.*;
 
-// import Laboratoria.Zestawy.Zestaw_3.ZapiszProstokat;
-
+/**
+ * Zapis reprezentacji obiektu typu Rectangle do podanego na wejście pliku.
+ */
 public class Zapisz {
     public static void main(String[] args) {
         BufferedReader bi = new BufferedReader(new InputStreamReader(System.in));
@@ -13,17 +12,23 @@ public class Zapisz {
 
             System.out.print("Podaj ścieżkę do pliku wyjściowego: ");
             String FilePath = bi.readLine();
+
+            // Zapis do pliku
+
+            System.out.println("Zapis do pliku: "+test);
             
             test.save(FilePath);
 
-            System.out.println("\n-- z pliku --\n");
+            // Odczyt z pliku
+
+            System.out.print("Odczyt z pliku: ");
 
             BufferedReader bo = new BufferedReader(new FileReader(FilePath));
             String str;
 
             while (bo.ready()) {
                 str = bo.readLine();
-                System.out.println(str);
+                System.out.print(str);
             }
 
             bo.close();

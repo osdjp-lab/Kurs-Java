@@ -1,8 +1,15 @@
-// package Laboratoria.Zestawy.Zestaw_3;
-
 import java.io.*;
 import java.util.Hashtable;
 
+/**
+ * Umożliwia przeliczanie walut.
+ * @param KURS_PLN Wartość kursu PLN względem waluty PLN.
+ * @param KURS_USD Wartość kursu USD względem waluty PLN.
+ * @param KURS_GBP Wartość kursu GBP względem waluty PLN.
+ * @param KURS_EUR Wartość kursu EUR względem waluty PLN.
+ * @param KURSY Hashtable wiążący oznaczenia numeryczne walut do wartości ich kursów względem PLN.
+ * @param NAZWY Hashtable wiążący oznaczenia numeryczne walut do ich skrótów literowych.
+ */
 public class Waluty {
     static double KURS_PLN = 1.00;
     static double KURS_USD = 3.97;
@@ -25,12 +32,15 @@ public class Waluty {
 
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
+            // Wybór typu waluty wejściowej
             System.out.print("Podaj walutę (0 - PLN, 1 - USD, 2 - GBP, 3 - EUR): ");
             String wal1 = br.readLine();
 
+            // Wprowadzanie kwoty wejściowej
             System.out.print("Podaj kwotę: ");
             String kwt = br.readLine();
 
+            // Wybór typu waluty wyjściowej
             System.out.print("Podaj walutę wyjściową (0 - PLN, 1 - USD, 2 - GBP, 3 - EUR): ");
             String wal2 = br.readLine();
 
@@ -38,17 +48,18 @@ public class Waluty {
             double y = Double.parseDouble(kwt);
             int z = Integer.parseInt(wal2);
 
-            System.out.println(y);
-
+            // Zwrot wartości w walucie wyjściowej
             System.out.println("Kwota w "+NAZWY.get(z)+": "+y * KURSY.get(x) / KURSY.get(z));
         }
 
+        // Obsługa wyjątku wejścia/wyjścia
         catch (IOException e1) {
-            System.out.println("wyjatek operacji wejscia/wyjscia");
+            System.out.println("Wyjatek operacji wejscia/wyjscia");
         }
 
+        // Obsługa wyjątku niewłaściwego typu reprezentacji podanej liczby w konwersji na wartość numeryczną
         catch (NumberFormatException e2) {
-            System.out.println("nieprawidlowy format liczby");
+            System.out.println("Nieprawidlowy format liczby");
         }
     }
 }

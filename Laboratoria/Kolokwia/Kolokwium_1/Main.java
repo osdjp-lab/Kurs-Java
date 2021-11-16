@@ -20,7 +20,7 @@ public class Main {
 
         System.out.println("----------------------------------------------");
 
-        // Test metody transponowa()
+        // Test metody transponowana()
 
         System.out.println("Macierz transponowana m1: "+m1.transponowana());
         System.out.println("Macierz transponowana m2: "+m2.transponowana());

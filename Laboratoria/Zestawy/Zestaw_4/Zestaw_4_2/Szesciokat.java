@@ -16,6 +16,6 @@ public class Szesciokat extends Figura {
     }
 
     public String toString() {
-        return "[a:"+a+"]";
+        return "Szesciokat o boku "+a;
     }
 }

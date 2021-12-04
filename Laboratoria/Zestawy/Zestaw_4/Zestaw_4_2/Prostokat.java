@@ -18,6 +18,6 @@ public class Prostokat extends Figura {
    }
 
    public String toString() {
-      return "prostokat o wym. " + dlugosc + " na " + szerokosc;
+      return "Prostokat o wymiarach " + dlugosc + " x " + szerokosc;
    }
 }

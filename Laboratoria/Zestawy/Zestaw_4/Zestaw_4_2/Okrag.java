@@ -16,6 +16,6 @@ public class Okrag extends Figura {
     }
 
     public String toString() {
-        return "okrag o pr. " + promien;
+        return "Okrag o promieniu " + promien;
     }
 }

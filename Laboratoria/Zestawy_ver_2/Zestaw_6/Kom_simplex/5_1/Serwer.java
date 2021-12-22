@@ -19,15 +19,13 @@ public class Serwer {
         BufferedReader inp;
         inp = new BufferedReader(new InputStreamReader(sock.getInputStream()));
 
-        Boolean terminate=false;
-
-        while (!terminate) {
+        while (true) {
             // komunikacja - czytanie danych ze strumienia
             String str;
             str = inp.readLine();
             System.out.println("<Nadeszlo:> " + str);
-            if (str.equalsIgnoreCase("exit")) {
-                terminate=true;
+            if (str.equalsIgnoreCase("koniec")) {
+                break;
             }
         }
 

@@ -18,16 +18,14 @@ public class Klient {
         PrintWriter outp;
         outp = new PrintWriter(sock.getOutputStream());
 
-        boolean terminate=false;
-
-        while (!terminate) {
+        while (true) {
             // komunikacja - czytanie danych z klawiatury i przekazywanie ich do strumienia
             System.out.print("<Wysylamy:> ");
             String str = klaw.readLine();
             outp.println(str);
             outp.flush();
-            if (str.equalsIgnoreCase("exit")) {
-                terminate=true;
+            if (str.equalsIgnoreCase("koniec")) {
+                break;
             }
         }
 

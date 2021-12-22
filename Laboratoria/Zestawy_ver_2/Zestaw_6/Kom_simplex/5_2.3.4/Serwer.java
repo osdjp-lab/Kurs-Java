@@ -8,34 +8,55 @@ public class Serwer {
         // tworzenie gniazda serwerowego
         ServerSocket serv;
         serv = new ServerSocket(PORT);
-
-        // oczekiwanie na polaczenie i tworzenie gniazda sieciowego
+        
+        // 1 - nawiązywanie połączenia z klientem
         System.out.println("Nasluchuje: " + serv);
         Socket sock;
         sock = serv.accept();
         System.out.println("Jest polaczenie: " + sock);
+
+        // 2 - strumienie danych
+        // strumień wyjścia socketu
         PrintWriter outp;
         outp = new PrintWriter(sock.getOutputStream());
-
-        // tworzenie strumienia danych pobieranych z gniazda sieciowego
-        BufferedReader inp;
+        // strumień wejścia socketu
+        BufferedReader inp, klaw;
         inp = new BufferedReader(new InputStreamReader(sock.getInputStream()));
+        // strumień wyjścia klawiatury
+        klaw = new BufferedReader(new InputStreamReader(System.in));
 
-        Boolean terminate=false;
+        String str;
 
-        while (!terminate) {
-            // komunikacja - czytanie danych ze strumienia
-            String str;
-            str = inp.readLine();
-            System.out.println("<Nadeszlo:> " + str);
-            if (str.equalsIgnoreCase("exit")) {
-                terminate=true;
+        // 3 - odbiór i wysyłanie komunikatów tekstowych
+        // Nie działa prawidłowo
+        while (true) {
+            // odbiór
+            // sprawdzenie czy są dane do pobrania
+            if ((str = inp.readLine()) != null) {
+                System.out.println("<Odebrano:> " + str);
+                // 4 - zakończenie komunikacji
+                if (str.equalsIgnoreCase("koniec")) {
+                    break;
+                }
+                outp.println("ECHO: "+str);
+                outp.flush();
             }
-            outp.println("ECHO: "+str);
-            outp.flush();
-        }
 
-        // zamykanie polaczenia
+            // wysyłanie
+            if ((str = klaw.readLine()) != null) {
+                System.out.print("<Wysylamy:> " + str);
+                // nadawanie
+                outp.println(str);
+                outp.flush();
+                // 4 - zakończenie komunikacji
+                if (str.equalsIgnoreCase("koniec")) {
+                    break;
+                }
+            }
+        }
+        System.out.println("Koniec polaczenia");
+
+        // 5 - zamykanie polaczenia
         inp.close();
         sock.close();
         serv.close();

@@ -1,0 +1,5 @@
+Współrzędne:[x: 3.0, y: 4.0]
+Wysokość:2.0
+Szerokość:2.0
+Pole:4.0
+Obwód:8.0

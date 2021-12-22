@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<!-- saved from url=(0079)http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html_images.asp.html -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>HTML Images</title>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="Keywords" content="HTML,CSS,JavaScript,SQL,PHP,jQuery,ASP,XML,DOM,Bootstrap,Web development,W3C,tutorials,programming,training,learning,quiz,primer,lessons,references,examples,source code,colors,demos,tips">
+<meta name="Description" content="Well organized and easy to understand Web bulding tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, PHP, and XML.">
+<link rel="icon" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="./HTML Images_files/w3.css">
+
+<script async="" src="./HTML Images_files/async-ads.js.download"></script><script type="text/javascript" async="" src="./HTML Images_files/f.txt"></script><script async="" type="text/javascript" src="./HTML Images_files/gpt.js.download"></script><script async="" src="./HTML Images_files/analytics.js.download"></script><script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-3855518-1', 'auto');
+ga('require', 'displayfeatures');
+ga('send', 'pageview');
+</script>
+
+<script type="text/javascript">
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') + 
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+</script>
+
+<script type="text/javascript">
+// GPT slots
+var gptAdSlots = [];
+googletag.cmd.push(function() {
+var leaderMapping = googletag.sizeMapping().
+// Mobile ad
+addSize([0, 0], [320, 50]). 
+// Vertical Tablet ad
+addSize([480, 0], [468, 60]). 
+// Horizontal Tablet
+addSize([750, 0], [728, 90]).
+// Small Desktop
+addSize([993, 0], [468, 60]).
+// Normal Desktop
+addSize([1135, 0], [728, 90]).
+// Large Desktop and bigger ad
+addSize([1425, 0], [[728, 90], [970, 90]]).build();
+gptAdSlots[0] = googletag.defineSlot('/16833175/MainLeaderboard', [[728, 90], [970, 90]], 'div-gpt-ad-1422003450156-2').
+defineSizeMapping(leaderMapping).addService(googletag.pubads());
+var skyMapping = googletag.sizeMapping().
+// Mobile ad
+addSize([0, 0], [320, 50]). 
+// Tablet ad
+addSize([975, 0], [120, 600]). 
+// Desktop
+addSize([1135, 0], [160, 600]).   
+// Large Desktop
+addSize([1675, 0], [[160, 600], [300, 600], [300, 1050]]).build();
+gptAdSlots[1] = googletag.defineSlot('/16833175/WideSkyScraper', [[160, 600], [300, 600], [300, 1050]], 'div-gpt-ad-1422003450156-5').
+defineSizeMapping(skyMapping).addService(googletag.pubads());
+var bmrMapping = googletag.sizeMapping().
+// Smaller
+addSize([0, 0], [[300, 250], [336, 280]]). 
+// Large Desktop
+addSize([1200, 0], [[300, 250], [336, 280], [970, 250]]).build();
+gptAdSlots[2] = googletag.defineSlot('/16833175/BottomMediumRectangle', [[300, 250], [336, 280], [970, 250]], 'div-gpt-ad-1422003450156-0').
+defineSizeMapping(bmrMapping).setCollapseEmptyDiv(true).addService(googletag.pubads());
+gptAdSlots[3] = googletag.defineSlot('/16833175/RightBottomMediumRectangle', [[300, 250], [336, 280]], 'div-gpt-ad-1422003450156-3').addService(googletag.pubads());
+googletag.pubads().setTargeting("content","html");
+googletag.enableServices();
+});
+</script>
+<link rel="stylesheet" type="text/css" href="./HTML Images_files/stdtheme.css">
+<meta http-equiv="origin-trial" content="A+b/H0b8RPXNaJgaNFpO0YOFuGK6myDQXlwnJB3SwzvNMfcndat4DZYMrP4ClJIzYWo3/yP2S+8FTZ/lpqbPAAEAAABueyJvcmlnaW4iOiJodHRwczovL2ltYXNkay5nb29nbGVhcGlzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="><meta http-equiv="origin-trial" content="A9ZgbRtm4pU3oZiuNzOsKcC8ppFSZdcjP2qYcdQrFKVzkmiWH1kdYY1Mi9x7G8+PS8HV9Ha9Cz0gaMdKsiVZIgMAAAB7eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AxL6oBxcpn5rQDPKSAs+d0oxNyJYq2/4esBUh3Yx5z8QfcLu+AU8iFCXYRcr/CEEfDnkxxLTsvXPJFQBxHfvkgMAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A9KPtG5kl3oLTk21xqynDPGQ5t18bSOpwt0w6kGa6dEWbuwjpffmdUpR3W+faZDubGT+KIk2do0BX2ca16x8qAcAAACBeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiVHJ1c3RUb2tlbnMiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A3HucHUo1oW9s+9kIKz8mLkbcmdaj5lxt3eiIMp1Nh49dkkBlg1Fhg4Fd/r0vL69mRRA36YutI9P/lJUfL8csQoAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjI2MjIwNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A0OysezhLoCRYomumeYlubLurZTCmsjTb087OvtCy95jNM65cfEsbajrJnhaGwiTxhz38ZZbm+UhUwQuXfVPTg0AAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjI2MjIwNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="AxoOxdZQmIoA1WeAPDixRAeWDdgs7ZtVFfH2y19ziTgD1iaHE5ZGz2UdSjubkWvob9C5PrjUfkWi4ZSLgWk3Xg8AAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjI2MjIwNzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A7+rMYR5onPnACrz+niKSeFdH3xw1IyHo2AZSHmxrofRk9w4HcQPMYcpBUKu6OQ6zsdxf4m/vqa6tG6Na4OLpAQAAAB4eyJvcmlnaW4iOiJodHRwczovL2ltYXNkay5nb29nbGVhcGlzLmNvbTo0NDMiLCJmZWF0dXJlIjoiQ29udmVyc2lvbk1lYXN1cmVtZW50IiwiZXhwaXJ5IjoxNjI2MjIwNzk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AwfG8hAcHnPa/kJ1Co0EvG/K0F9l1s2JZGiDLt2mhC3QI5Fh4qmsmSwrWObZFbRC9ieDaSLU6lHRxhGUF/i9sgoAAACBeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiSW50ZXJlc3RDb2hvcnRBUEkiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AwQ7dCmHkvR6FuOFxAuNnktYSQrGbL4dF+eBkrwNLALc69Wr//PnO1yzns3pjUoCaYbKHtVcnng2hU+8OUm0PAYAAACHeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiSW50ZXJlc3RDb2hvcnRBUEkiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="AysVDPGQTLD/Scn78x4mLwB1tMfje5jwUpAAzGRpWsr1NzoN7MTFhT3ClmImi2svDZA7V6nWGIV8YTPsSRTe0wYAAACHeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiSW50ZXJlc3RDb2hvcnRBUEkiLCJleHBpcnkiOjE2MjYyMjA3OTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><script src="./HTML Images_files/pubads_impl_2021051801.js.download" async=""></script><link rel="preload" href="./HTML Images_files/f(1).txt" as="script"><script type="text/javascript" src="./HTML Images_files/f(1).txt"></script><link rel="preload" href="./HTML Images_files/f(2).txt" as="script"><script type="text/javascript" src="./HTML Images_files/f(2).txt"></script><link rel="prefetch" href="https://f2fec6b2a9ce67d94fcdc9bc87a04b90.safeframe.googlesyndication.com/safeframe/1-0-38/html/container.html"><link rel="prefetch" href="https://tpc.googlesyndication.com/safeframe/1-0-38/html/container.html"><script src="./HTML Images_files/cse_element__en.js.download" type="text/javascript"></script><link type="text/css" rel="stylesheet" href="./HTML Images_files/default+en.css"><link type="text/css" rel="stylesheet" href="./HTML Images_files/default.css"><style type="text/css">.gsc-control-cse{font-family:arial, sans-serif}.gsc-control-cse .gsc-table-result{font-family:arial, sans-serif}.gsc-refinementsGradient{background:linear-gradient(to left,rgba(255,255,255,1),rgba(255,255,255,0))}.gsc-control-cse{border-color:#FFFFFF;background-color:#FFFFFF}input.gsc-input,.gsc-input-box,.gsc-input-box-hover,.gsc-input-box-focus{border-color:#D9D9D9}.gsc-search-button-v2,.gsc-search-button-v2:hover,.gsc-search-button-v2:focus{border-color:#2F5BB7;background-color:#357AE8;background-image:none;filter:none}.gsc-search-button-v2 svg{fill:#FFFFFF}.gsc-tabHeader.gsc-tabhActive,.gsc-refinementHeader.gsc-refinementhActive{color:#CCCCCC;border-color:#CCCCCC;background-color:#FFFFFF}.gsc-tabHeader.gsc-tabhInactive,.gsc-refinementHeader.gsc-refinementhInactive{color:#CCCCCC;border-color:#CCCCCC;background-color:#FFFFFF}.gsc-webResult.gsc-result,.gsc-results .gsc-imageResult{border-color:#FFFFFF;background-color:#FFFFFF}.gsc-webResult.gsc-result:hover{border-color:#FFFFFF;background-color:#FFFFFF}.gs-webResult.gs-result a.gs-title:link,.gs-webResult.gs-result a.gs-title:link b,.gs-imageResult a.gs-title:link,.gs-imageResult a.gs-title:link b{color:#1155CC}.gs-webResult.gs-result a.gs-title:visited,.gs-webResult.gs-result a.gs-title:visited b,.gs-imageResult a.gs-title:visited,.gs-imageResult a.gs-title:visited b{color:#1155CC}.gs-webResult.gs-result a.gs-title:hover,.gs-webResult.gs-result a.gs-title:hover b,.gs-imageResult a.gs-title:hover,.gs-imageResult a.gs-title:hover b{color:#1155CC}.gs-webResult.gs-result a.gs-title:active,.gs-webResult.gs-result a.gs-title:active b,.gs-imageResult a.gs-title:active,.gs-imageResult a.gs-title:active b{color:#1155CC}.gsc-cursor-page{color:#1155CC}a.gsc-trailing-more-results:link{color:#1155CC}.gs-webResult:not(.gs-no-results-result):not(.gs-error-result) .gs-snippet,.gs-fileFormatType{color:#333333}.gs-webResult div.gs-visibleUrl{color:#009933}.gs-webResult div.gs-visibleUrl-short{color:#009933}.gs-webResult div.gs-visibleUrl-short{display:none}.gs-webResult div.gs-visibleUrl-long{display:none}.gs-webResult div.gs-visibleUrl-breadcrumb{display:block}.gs-promotion div.gs-visibleUrl-short{display:none}.gs-promotion div.gs-visibleUrl-long{display:block}.gs-promotion div.gs-visibleUrl-breadcrumb{display:none}.gsc-cursor-box{border-color:#FFFFFF}.gsc-results .gsc-cursor-box .gsc-cursor-page{border-color:#CCCCCC;background-color:#FFFFFF;color:#CCCCCC}.gsc-results .gsc-cursor-box .gsc-cursor-current-page{border-color:#CCCCCC;background-color:#FFFFFF;color:#CCCCCC}.gsc-webResult.gsc-result.gsc-promotion{border-color:#F6F6F6;background-color:#F6F6F6}.gsc-completion-title{color:#1155CC}.gsc-completion-snippet{color:#333333}.gs-promotion a.gs-title:link,.gs-promotion a.gs-title:link *,.gs-promotion .gs-snippet a:link{color:#1155CC}.gs-promotion a.gs-title:visited,.gs-promotion a.gs-title:visited *,.gs-promotion .gs-snippet a:visited{color:#1155CC}.gs-promotion a.gs-title:hover,.gs-promotion a.gs-title:hover *,.gs-promotion .gs-snippet a:hover{color:#1155CC}.gs-promotion a.gs-title:active,.gs-promotion a.gs-title:active *,.gs-promotion .gs-snippet a:active{color:#1155CC}.gs-promotion .gs-snippet,.gs-promotion .gs-title .gs-promotion-title-right,.gs-promotion .gs-title .gs-promotion-title-right *{color:#333333}.gs-promotion .gs-visibleUrl,.gs-promotion .gs-visibleUrl-short{color:#009933}.gcsc-find-more-on-google{color:#1155CC}.gcsc-find-more-on-google-magnifier{fill:#1155CC}</style><style type="text/css">.gscb_a{display:inline-block;font:27px/13px arial,sans-serif}.gsst_a .gscb_a{color:#a1b9ed;cursor:pointer}.gsst_a:hover .gscb_a,.gsst_a:focus .gscb_a{color:#36c}.gsst_a{display:inline-block}.gsst_a{cursor:pointer;padding:0 4px}.gsst_a:hover{text-decoration:none!important}.gsst_b{font-size:16px;padding:0 2px;position:relative;user-select:none;-webkit-user-select:none;white-space:nowrap}.gsst_e{vertical-align:middle;opacity:0.55;}.gsst_a:hover .gsst_e,.gsst_a:focus .gsst_e{opacity:0.72;}.gsst_a:active .gsst_e{opacity:1;}.gsst_f{background:white;text-align:left}.gsst_g{background-color:white;border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.2);margin:-1px -3px;padding:0 6px}.gsst_h{background-color:white;height:1px;margin-bottom:-1px;position:relative;top:-1px}.gsib_a{width:100%;padding:4px 6px 0}.gsib_a,.gsib_b{vertical-align:top}.gssb_c{border:0;position:absolute;z-index:989}.gssb_e{border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.2);cursor:default}.gssb_f{visibility:hidden;white-space:nowrap}.gssb_k{border:0;display:block;position:absolute;top:0;z-index:988}.gsdd_a{border:none!important}.gsq_a{padding:0}.gssb_a{padding:0 7px}.gssb_a,.gssb_a td{white-space:nowrap;overflow:hidden;line-height:22px}#gssb_b{font-size:11px;color:#36c;text-decoration:none}#gssb_b:hover{font-size:11px;color:#36c;text-decoration:underline}.gssb_g{text-align:center;padding:8px 0 7px;position:relative}.gssb_h{font-size:15px;height:28px;margin:0.2em;-webkit-appearance:button}.gssb_i{background:#eee}.gss_ifl{visibility:hidden;padding-left:5px}.gssb_i .gss_ifl{visibility:visible}a.gssb_j{font-size:13px;color:#36c;text-decoration:none;line-height:100%}a.gssb_j:hover{text-decoration:underline}.gssb_l{height:1px;background-color:#e5e5e5}.gssb_m{color:#000;background:#fff}.gssb_a{padding:0 9px}.gsib_a{padding:5px 9px 4px 9px}.gscb_a{line-height:27px}.gssb_e{border:0}.gssb_l{margin:5px 0}input.gsc-input::-webkit-input-placeholder{font-size:14px}input.gsc-input:-moz-placeholder{font-size:14px}input.gsc-input::-moz-placeholder{font-size:14px}input.gsc-input:-ms-input-placeholder{font-size:14px}input.gsc-input:focus::-webkit-input-placeholder{color:transparent}input.gsc-input:focus:-moz-placeholder{color:transparent}input.gsc-input:focus::-moz-placeholder{color:transparent}input.gsc-input:focus:-ms-input-placeholder{color:transparent}.gssb_c .gsc-completion-container{position:static}.gssb_c{z-index:5000}.gsc-completion-container table{background:transparent;font-size:inherit;font-family:inherit}.gssb_c > tbody > tr,.gssb_c > tbody > tr > td,.gssb_d,.gssb_d > tbody > tr,.gssb_d > tbody > tr > td,.gssb_e,.gssb_e > tbody > tr,.gssb_e > tbody > tr > td{padding:0;margin:0;border:0}.gssb_a table,.gssb_a table tr,.gssb_a table tr td{padding:0;margin:0;border:0}</style></head>
+<body>
+<div class="w3-container top">
+<a class="w3schools-logo" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/index.html">w3schools<span class="dotcom">.com</span></a>
+<div class="w3-right toptext w3-wide">THE WORLD'S LARGEST WEB DEVELOPER SITE</div></div>
+<div class="w3-navbar w3-card-2 w3-slim topnav" id="topnav" style="position: relative;">
+<div style="overflow:auto;">
+<div style="float:left;width:50%;overflow:hidden;height:44px">
+<a href="javascript:void(0);" class="topnav-localicons w3-hide-large w3-left" onclick="open_menu()" title="Menu">☰</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/default.asp.html" class="active" title="Home"></a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/default.asp.html" class="active" title="HTML Tutorial">HTML</a><a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/css/default.asp.html" class="active" title="CSS Tutorial">CSS</a><a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/js/default.asp.html" class="active" title="JavaScript Tutorial">JAVASCRIPT</a><a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/sql/default.asp.html" class="active" title="SQL Tutorial">SQL</a><a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/php/default.asp.html" class="active" title="PHP Tutorial">PHP</a><a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/bootstrap/default.asp.html" class="active" title="Bootstrap Tutorial">BOOTSTRAP</a><a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/jquery/default.asp.html" class="active" title="jQuery Tutorial">JQUERY</a><a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/angular/default.asp.html" class="active" title="Angular Tutorial">ANGULAR</a><a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/xml/default.asp.html" class="active" title="XML Tutorial">XML</a></div>
+<div style="float:right;width:110px;overflow:hidden;height:44px;">
+<a href="javascript:void(0);" class="topnav-icons fa fa-search w3-right" onclick="w3_open_nav(&quot;search&quot;)" title="Search W3Schools"></a>
+<a href="javascript:void(0);" class="topnav-icons fa fa-globe w3-right" onclick="openGoogleTranslate();w3_open_nav(&quot;translate&quot;)" title="Translate W3Schools"></a></div>
+<div class="w3-hide-small" style="float:right;width:30%;overflow:hidden;height:44px;">
+<a id="topnavbtn_tutorials" href="javascript:void(0);" onclick="w3_open_nav(&quot;tutorials&quot;)" title="Tutorials">TUTORIALS <i class="fa fa-caret-down" style="display: inline;"></i><i class="fa fa-caret-up" style="display:none"></i></a><a id="topnavbtn_references" href="javascript:void(0);" onclick="w3_open_nav(&quot;references&quot;)" title="References">REFERENCES <i class="fa fa-caret-down" style="display: inline;"></i><i class="fa fa-caret-up" style="display:none"></i></a><a id="topnavbtn_examples" href="javascript:void(0);" onclick="w3_open_nav(&quot;examples&quot;)" title="Examples">EXAMPLES <i class="fa fa-caret-down" style="display: inline;"></i><i class="fa fa-caret-up" style="display:none"></i></a><a href="http://www.w3schools.com/forum/default.asp">FORUM</a></div></div>
+<div id="nav_tutorials" class="w3-dropnav w3-light-grey w3-card-2 w3-center" style="display: none;"></div>
+<div id="nav_references" class="w3-dropnav w3-light-grey w3-card-2 w3-center" style="display: none;"></div>
+<div id="nav_examples" class="w3-dropnav w3-light-grey w3-card-2 w3-center" style="display: none;"></div>
+<div id="nav_translate" class="w3-dropnav w3-light-grey w3-card-2 w3-center" style="display: none;"></div>
+<div id="nav_search" class="w3-dropnav w3-light-grey w3-card-2 w3-center" style="display: none;"></div></div>
+<div class="w3-row w3-light-grey" id="belowtopnav" style="padding-top: 0px;">
+<div class="w3-col w3-slim" id="leftmenu" style="padding-top: 0px; display: none;">
+<div id="leftmenuinner" style="padding-top: 112px;">
+<div class="w3-light-grey" id="leftmenuinnerinner">
+<a href="javascript:void(0)" onclick="close_menu()" class="w3-closebtn w3-hide-large w3-large" style="padding:3px 12px;">×</a>
+<h2 class="left"><span class="left_h2">HTML</span> Tutorial</h2>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/default.asp.html">HTML HOME</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html_intro.asp.html">HTML Introduction</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html_editors.asp.html">HTML Editors</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html_basic.asp.html">HTML Basic</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html_elements.asp.html">HTML Elements</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html_attributes.asp.html">HTML Attributes</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html_headings.asp.html">HTML Headings</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html_paragraphs.asp.html">HTML Paragraphs</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html_styles.asp.html">HTML Styles</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html_formatting.asp.html">HTML Formatting</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html_quotation_elements.asp.html">HTML Quotations</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html_computercode_elements.asp.html">HTML Computercode</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html_comments.asp.html">HTML Comments</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html_colors.asp.html">HTML Colors</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html_css.asp.html">HTML CSS</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html_links.asp.html">HTML Links</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html_images.asp.html" class="active">HTML Images</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html_tables.asp.html">HTML Tables</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html_lists.asp.html">HTML Lists</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html_blocks.asp.html">HTML Blocks</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html_classes.asp.html">HTML Classes</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html_layout.asp.html">HTML Layout</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html_responsive.asp.html">HTML Responsive</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html_iframe.asp.html">HTML Iframes</a>
+
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html_scripts.asp.html">HTML JavaScript</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html_head.asp.html">HTML Head</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html_entities.asp.html">HTML Entities</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html_symbols.asp.html">HTML Symbols</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html_charset.asp.html">HTML Charset</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html_urlencode.asp.html">HTML URL Encode</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html_xhtml.asp.html">HTML XHTML</a>
+<br>
+<h2 class="left"><span class="left_h2">HTML</span> Forms</h2>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html_forms.asp.html">HTML Forms</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html_form_elements.asp.html">HTML Form Elements</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html_form_input_types.asp.html">HTML Input Types</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html_form_attributes.asp.html">HTML Input Attributes</a>
+<br>
+<h2 class="left"><span class="left_h2">HTML5</span></h2>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html5_intro.asp.html">HTML5 Intro</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html5_browsers.asp.html">HTML5 Support</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html5_new_elements.asp.html">HTML5 Elements</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html5_semantic_elements.asp.html">HTML5 Semantics</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html5_migration.asp.html">HTML5 Migration</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html5_syntax.asp.html">HTML5 Style Guide</a>
+<br>
+<h2 class="left"><span class="left_h2">HTML</span> Graphics</h2>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html5_canvas.asp.html">HTML Canvas</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html5_svg.asp.html">HTML SVG</a>
+<br>
+<h2 class="left"><span class="left_h2">HTML</span> Media</h2>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html_media.asp.html">HTML Media</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html5_video.asp.html">HTML Video</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html5_audio.asp.html">HTML Audio</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html_object.asp.html">HTML Plug-ins</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html_youtube.asp.html">HTML YouTube</a>
+<br>
+<h2 class="left"><span class="left_h2">HTML</span> APIs</h2>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html5_geolocation.asp.html">HTML Geolocation</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html5_draganddrop.asp.html">HTML Drag/Drop</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html5_webstorage.asp.html">HTML Local Storage</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html5_app_cache.asp.html">HTML App Cache</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html5_webworkers.asp.html">HTML Web Workers</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html5_serversentevents.asp.html">HTML SSE</a>
+<br>
+<h2 class="left"><span class="left_h2">HTML</span> Examples</h2>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html_examples.asp.html">HTML Examples</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html_quiz.asp.html">HTML Quiz</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html5_quiz.asp.html">HTML5 Quiz</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html_exam.asp.html">HTML Certificate</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html5_exam.asp.html">HTML5 Certificate</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html_summary.asp.html">HTML Summary</a>
+<br>
+<h2 class="left"><span class="left_h2">HTML</span> References</h2>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/tags/default.asp.html">HTML Tag List</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/tags/ref_standardattributes.asp.html">HTML Attributes</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/tags/ref_eventattributes.asp.html">HTML Events</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/tags/ref_canvas.asp.html">HTML Canvas</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/tags/ref_av_dom.asp.html">HTML Audio/Video</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/tags/ref_html_dtd.asp.html">HTML Doctypes</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/colors/default.asp.html">HTML Colors</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/charsets/default.asp.html">HTML Character Sets</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/tags/ref_urlencode.asp.html">HTML URL Encode</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/tags/ref_language_codes.asp.html">HTML Lang Codes</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/tags/ref_httpmessages.asp.html">HTTP Messages</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/tags/ref_httpmethods.asp.html">HTTP Methods</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/tags/ref_pxtoemconversion.asp.html">PX to EM Converter</a>
+<a target="_top" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/tags/ref_keyboardshortcuts.asp.html">Keyboard Shortcuts</a><br><br></div></div>&nbsp;</div>
+<div class="w3-rest">
+<div class="w3-row w3-white">
+<div class="w3-col l10 m12" id="main">
+<div id="mainLeaderboard" style="overflow:hidden;">
+<!-- MainLeaderboard-->
+<div id="div-gpt-ad-1422003450156-2" style="">
+<script type="text/javascript">googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+<div id="google_ads_iframe_/16833175/MainLeaderboard_0__container__" style="border: 0pt none; width: 728px; height: 0px;"></div></div></div>
+<h1>HTML <span class="color_h1">Images</span></h1>
+<div class="chapter" style="visibility: visible;">
+<div class="prev"><a class="chapter" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html_links.asp.html" style="visibility: visible;">« Previous</a></div>
+<div class="next"><a class="chapter" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html_tables.asp.html" style="visibility: visible;">Next Chapter »</a></div>
+</div>
+<br>
+
+<div class="w3-row">
+<div class="w3-third w3-center">
+<h2>JPG Images</h2>
+<img alt="Mountain View" src="./HTML Images_files/pic_mountain.jpg" style="width: 304px; height: auto" class="img-responsive">
+</div>
+<div class="w3-third w3-center">
+<h2>GIF Images</h2>
+<img alt="" src="./HTML Images_files/html5.gif" style="width: 128px; height: auto" class="img-responsive">
+</div>
+<div class="w3-third w3-center">
+<h2>PNG Images</h2>
+<img alt="Graph" src="./HTML Images_files/pic_graph.png" style="width: 170px; height: auto" class="img-responsive">
+</div>
+</div>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>!DOCTYPE<span style="color:red"> html</span><span style="color:mediumblue">&gt;</span></span><br>
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>html<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>body<span style="color:mediumblue">&gt;</span></span><br><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>h2<span style="color:mediumblue">&gt;</span></span>Spectacular Mountain<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h2<span style="color:mediumblue">&gt;</span></span><br>
+	<span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="pic_mountain.jpg"</span> 
+alt<span style="color:mediumblue">="Mountain View"</span> style<span style="color:mediumblue">="width:304px;height:228px;"</span></span><span style="color:mediumblue">&gt;</span></span><br><br>
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>/body<span style="color:mediumblue">&gt;</span></span><br>
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>/html<span style="color:mediumblue">&gt;</span></span>
+</div>
+<a class="w3-btn w3-margin-bottom" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/tryit.asp-filename=tryhtml_images_mountain.html" target="_blank">Try it Yourself »</a>
+</div>
+
+<table class="lamp"><tbody><tr>
+<th style="width:34px">
+<img src="./HTML Images_files/lamp.jpg" alt="Note" style="height:32px;width:32px"></th>
+<td>Always specify the width and height of an image. If width and height are not specified, the page will flicker while the image loads.
+</td>
+</tr></tbody></table>
+<hr>
+
+<h2>HTML Images Syntax</h2>
+<p>In HTML, images are defined with the <strong>&lt;img&gt;</strong> tag.</p>
+<p>The &lt;img&gt; tag&nbsp;is empty, it contains attributes only, and does not 
+have a closing tag.</p>
+<p>The src attribute specifies the URL 
+(web address) of the image:</p>
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="<i>url</i>"</span> alt<span style="color:mediumblue">="<i>some_text</i>"</span></span><span style="color:mediumblue">&gt;</span></span>
+</div></div>
+<hr>
+
+<h2>The alt Attribute</h2>
+<p>The alt attribute specifies an alternate text for an image, if the image cannot be displayed.</p>
+<p>The alt attribute provides alternative information for an image if a user for 
+some reason cannot view it (because of slow connection, an error in the src 
+attribute, or if the user uses a screen reader).</p>
+<p>If a browser cannot find an image, it will display the alt text:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="wrongname.gif"</span> alt<span style="color:mediumblue">="HTML5 Icon"</span> 
+	style<span style="color:mediumblue">="width:128px;height:128px;"</span></span><span style="color:mediumblue">&gt;</span></span>
+</div>
+<a class="w3-btn w3-margin-bottom" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/tryit.asp-filename=tryhtml_images_wrong.html" target="_blank">Try it Yourself »</a>
+</div>
+<p>The alt attribute is required. A web page will not validate correctly without it. </p>
+<hr>
+
+<h2>HTML Screen Readers</h2>
+<p>A screen reader is a software program that can read what is displayed on a screen.</p>
+<p>Screen readers are useful to people who are blind, visually impaired, or learning disabled.</p>
+<table class="lamp"><tbody><tr>
+<th style="width:34px">
+<img src="./HTML Images_files/lamp.jpg" alt="Note" style="height:32px;width:32px"></th>
+<td>Screen readers can read the <strong>alt</strong> attribute.</td>
+</tr></tbody></table>
+<hr>
+
+<h2>Image Size - Width and Height</h2>
+<p>You can use the <strong>style</strong> attribute to specify the width 
+and height of an image.</p>
+<p>The values are specified in pixels (use px after the value):</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="html5.gif"</span> alt<span style="color:mediumblue">="HTML5 Icon"</span> style<span style="color:mediumblue">="width:128px;height:128px;"</span></span><span style="color:mediumblue">&gt;</span></span>
+</div>
+<a class="w3-btn w3-margin-bottom" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/tryit.asp-filename=tryhtml_images_size.html" target="_blank">Try it Yourself »</a>
+</div>
+<p>Alternatively, you can use <strong>width</strong> and <strong>height</strong> attributes. 
+Here, the values are specified in pixels by default:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="html5.gif"</span> alt<span style="color:mediumblue">="HTML5 Icon"</span> width<span style="color:mediumblue">="128"</span> height<span style="color:mediumblue">="128"</span></span><span style="color:mediumblue">&gt;</span></span>
+</div>
+<a class="w3-btn w3-margin-bottom" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/tryit.asp-filename=tryhtml_images_attributes.html" target="_blank">Try it Yourself »</a>
+</div>
+<hr>
+
+<h2>Width and Height or Style?</h2>
+<p>Both the width, height, and style attributes are valid in the latest HTML5 
+standard.</p>
+<p>We suggest you use the style attribute. It prevents styles sheets from changing 
+the original size of images:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+	<span style="color:brown"><span style="color:mediumblue">&lt;</span>!DOCTYPE<span style="color:red"> html</span><span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>html<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>head<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>style<span style="color:mediumblue">&gt;</span></span><span style="color:brown"><br>img <span style="color:red"><span style="color:black">{</span> 
+	<br>&nbsp;&nbsp;&nbsp; width<span style="color:mediumblue"><span style="color:black">:</span>100%<span style="color:black">;</span></span> <br><span style="color:black">}</span></span><br>
+	</span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/style<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/head<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>body<span style="color:mediumblue">&gt;</span></span><br><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="html5.gif"</span> alt<span style="color:mediumblue">="HTML5 
+	Icon"</span> style<span style="color:mediumblue">="width:128px;height:128px;"</span></span><span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="html5.gif"</span> alt<span style="color:mediumblue">="HTML5 
+	Icon"</span> width<span style="color:mediumblue">="128"</span> height<span style="color:mediumblue">="128"</span></span><span style="color:mediumblue">&gt;</span></span><br><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/body<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/html<span style="color:mediumblue">&gt;</span></span></div>
+<a class="w3-btn w3-margin-bottom" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/tryit.asp-filename=tryhtml_images_style.html" target="_blank">Try it Yourself »</a>
+</div>
+<hr>
+
+<h2>Images in Another Folder</h2>
+<p>If not specified, the browser expects to find the image in the same folder as the web page.</p>
+<p>However, it is common to store images in a sub-folder. You must then include the folder 
+name in the src attribute:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="/images/html5.gif"</span> 
+alt<span style="color:mediumblue">="HTML5 Icon"</span> style<span style="color:mediumblue">="width:128px;height:128px;"</span></span><span style="color:mediumblue">&gt;</span></span>
+</div>
+<a class="w3-btn w3-margin-bottom" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/tryit.asp-filename=tryhtml_images_folder.html" target="_blank">Try it Yourself »</a>
+</div>
+<hr>
+
+<h2>Images on Another Server</h2>
+<p>Some web sites store their images on image servers.</p>
+<p>Actually, you can access images from any web address in the world:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="http://www.w3schools.com/images/w3schools_green.jpg"</span> 
+	alt<span style="color:mediumblue">="W3Schools.com"</span></span><span style="color:mediumblue">&gt;</span></span>
+</div>
+<a class="w3-btn w3-margin-bottom" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/tryit.asp-filename=tryhtml_images_w3schools.html" target="_blank">Try it Yourself »</a>
+</div>
+<hr>
+
+<h2>Animated Images</h2>
+<p>The GIF standard allows animated images:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="programming.gif"</span> alt<span style="color:mediumblue">="Computer Man"</span> style<span style="color:mediumblue">="width:48px;height:48px;"</span></span><span style="color:mediumblue">&gt;</span></span>
+</div>
+<a class="w3-btn w3-margin-bottom" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/tryit.asp-filename=tryhtml_images_hackman.html" target="_blank">Try it Yourself »</a>
+</div>
+<p>Note that the syntax of inserting animated images is no different from non-animated images.</p>
+<hr>
+
+<h2>Using an Image as a Link</h2>
+<p>&nbsp;To use an image as a link, simply nest the &lt;img&gt; tag inside the &lt;a&gt; 
+tag:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>a<span style="color:red"> href<span style="color:mediumblue">="default.asp"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="smiley.gif"</span> alt<span style="color:mediumblue">="HTML tutorial"</span> 
+style<span style="color:mediumblue">="width:42px;height:42px;border:0;"</span></span><span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/a<span style="color:mediumblue">&gt;</span></span>
+</div>
+<a class="w3-btn w3-margin-bottom" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/tryit.asp-filename=tryhtml_images_link.html" target="_blank">Try it Yourself »</a>
+</div>
+
+<table class="lamp"><tbody><tr>
+<th style="width:34px">
+<img src="./HTML Images_files/lamp.jpg" alt="Note" style="height:32px;width:32px"></th>
+<td>Add "border:0;" to prevent IE9 (and earlier) from displaying a border around the image.</td>
+</tr></tbody></table>
+<hr>
+
+<h2>Image Floating</h2>
+<p>Use the CSS float property to let the image float.</p>
+<p>The image can float to the right or to the left of a text:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="smiley.gif"</span> alt<span style="color:mediumblue">="Smiley face"</span>
+style<span style="color:mediumblue">="float:right;width:42px;height:42px;"</span></span><span style="color:mediumblue">&gt;</span></span><br>
+	The image will float to the right of 
+the text.<br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="smiley.gif"</span> alt<span style="color:mediumblue">="Smiley face"</span>
+style<span style="color:mediumblue">="float:left;width:42px;height:42px;"</span></span><span style="color:mediumblue">&gt;</span></span><br>
+	The image will float to the left of 
+the text.<br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span></div>
+<a class="w3-btn w3-margin-bottom" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/tryit.asp-filename=tryhtml_images_float.html" target="_blank">Try it Yourself »</a>
+</div>
+<hr>
+
+<h2>Image Maps</h2>
+<p>Use the &lt;map&gt; tag to define an image-map. An image-map is an image with 
+clickable areas.</p>
+<p>The name attribute of the &lt;map&gt; tag is associated with the &lt;img&gt;'s usemap 
+attribute and creates a relationship between the image and the map.</p>
+<p>The &lt;map&gt; tag contains a number of &lt;area&gt; tags, that defines the clickable 
+areas in the image-map:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+<span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="planets.gif"</span> alt<span style="color:mediumblue">="Planets"</span> usemap<span style="color:mediumblue">="#planetmap"</span> 
+	style<span style="color:mediumblue">="width:145px;height:126px;"</span></span><span style="color:mediumblue">&gt;</span></span><br>
+<br><span style="color:brown"><span style="color:mediumblue">&lt;</span>map<span style="color:red"> name<span style="color:mediumblue">="planetmap"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>area<span style="color:red"> shape<span style="color:mediumblue">="rect"</span> coords<span style="color:mediumblue">="0,0,82,126"</span> 
+alt<span style="color:mediumblue">="Sun"</span> href<span style="color:mediumblue">="sun.htm"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>area<span style="color:red"> shape<span style="color:mediumblue">="circle"</span> coords<span style="color:mediumblue">="90,58,3"</span> 
+alt<span style="color:mediumblue">="Mercury"</span> href<span style="color:mediumblue">="mercur.htm"</span></span><span style="color:mediumblue">&gt;</span></span><br>
+&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>area<span style="color:red"> shape<span style="color:mediumblue">="circle"</span> coords<span style="color:mediumblue">="124,58,8"</span> 
+alt<span style="color:mediumblue">="Venus"</span> href<span style="color:mediumblue">="venus.htm"</span></span><span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/map<span style="color:mediumblue">&gt;</span></span></div>
+<a class="w3-btn w3-margin-bottom" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/tryit.asp-filename=tryhtml_images_map.html" target="_blank">Try it Yourself »</a>
+</div>
+<hr>
+
+<h2>Chapter Summary</h2>
+<ul>
+	<li>Use the HTML <strong>&lt;img&gt;</strong> element to define an image</li>
+	<li>Use the HTML <strong>src</strong> attribute to define the URL of the image</li>
+	<li>Use the HTML <strong>alt</strong> attribute to define an alternate text 
+	for an image, if it cannot be displayed</li>
+	<li>Use the HTML <strong>width</strong> and <strong>height</strong> attributes to define the 
+	size of the image</li>
+	<li>Use the CSS <strong>width</strong> and <strong>height</strong> 
+	properties to define the 
+	size of the image (alternatively)</li>
+	<li>Use the CSS <strong>float</strong> property to let the image float</li>
+	<li>Use the HTML <strong>&lt;map&gt;</strong> element to define an image-map</li>
+	<li>Use the HTML <strong>&lt;area&gt;</strong> element to define the 
+	clickable areas in the image-map</li>
+	<li>Use the HTML &lt;img&gt;'s element <strong>usemap</strong> attribute to point to an image-map</li>
+</ul>
+
+<table class="lamp"><tbody><tr>
+<th style="width:34px">
+<img src="./HTML Images_files/lamp.jpg" alt="Note" style="height:32px;width:32px"></th>
+<td>Loading images takes time. Large images can slow down your page. Use images carefully.</td>
+</tr></tbody></table>
+<hr>
+<h2>Test Yourself with Exercises!</h2>
+<p>
+<a class="w3-btn" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/exercise.asp-filename=exercise_images1.html" target="_blank">Exercise 1 »</a>&nbsp;
+<a class="w3-btn" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/exercise.asp-filename=exercise_images2.html" target="_blank">Exercise 2 »</a>&nbsp;
+<a class="w3-btn" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/exercise.asp-filename=exercise_images3.html" target="_blank">Exercise 3 »</a>&nbsp;
+<a class="w3-btn" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/exercise.asp-filename=exercise_images4.html" target="_blank">Exercise 4 »</a>&nbsp;
+<a class="w3-btn" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/exercise.asp-filename=exercise_images5.html" target="_blank">Exercise 5 »</a>&nbsp;
+<a class="w3-btn" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/exercise.asp-filename=exercise_images6.html" target="_blank">Exercise 6 »</a>
+</p>
+<hr>
+
+<h2>HTML Image Tags</h2>
+<table class="w3-table-all notranslate">
+<tbody><tr>
+<th>Tag</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/tags/tag_img.asp.html">&lt;img&gt;</a></td>
+<td>Defines an image</td>
+</tr>
+<tr>
+<td><a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/tags/tag_map.asp.html">&lt;map&gt;</a></td>
+<td>Defines an image-map</td>
+</tr>
+<tr>
+<td><a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/tags/tag_area.asp.html">&lt;area&gt;</a></td>
+<td>Defines a clickable area inside an image-map</td>
+</tr>
+</tbody></table>
+
+<br>
+<div class="chapter" style="visibility: visible;">
+<div class="prev"><a class="chapter" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html_links.asp.html" style="visibility: visible;">« Previous</a></div>
+<div class="next"><a class="chapter" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html_tables.asp.html" style="visibility: visible;">Next Chapter »</a></div>
+</div>
+</div>
+<div class="w3-col l2 m12" id="right">
+
+<div class="sidesection">
+<div id="skyscraper">
+<div id="div-gpt-ad-1422003450156-5" style="">
+<script>
+ googletag.cmd.push(function() {
+ googletag.display('div-gpt-ad-1422003450156-5');
+ });
+ </script> 
+<div id="google_ads_iframe_/16833175/WideSkyScraper_0__container__" style="border: 0pt none; width: 160px; height: 0px;"></div></div>
+</div>
+</div>
+
+<div class="sidesection">
+<h3>W3SCHOOLS EXAMS</h3>
+<a target="_blank" href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/cert/default.asp.html">
+HTML, CSS, JavaScript, PHP, jQuery, Bootstrap and XML Certifications</a>
+</div>
+
+<div class="sidesection">
+<h3>COLOR PICKER</h3>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/colors/colors_picker.asp.html">
+<img src="./HTML Images_files/colorpicker.gif" alt="colorpicker"></a>
+</div>
+
+<div class="sidesection">
+<h3>LEARN MORE:</h3>
+<p>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/colors/colors_converter.asp.html">Color Converter</a><br>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/howto/howto_google_maps.asp.html">Google Maps</a><br>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/howto/howto_css_animate_buttons.asp.html">Animated Buttons</a><br>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/howto/howto_css_modals.asp.html">Modal Boxes</a><br>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/howto/howto_css_modal_images.asp.html">Modal Images</a><br>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/howto/howto_css_tooltip.asp.html">Tooltips</a><br>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/howto/howto_css_loader.asp.html">Loaders</a><br>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/howto/howto_js_animate.asp.html">JS Animations</a><br>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/howto/howto_js_progressbar.asp.html">Progress Bars</a><br>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/howto/howto_js_dropdown.asp.html">Dropdowns</a><br>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/howto/howto_js_slideshow.asp.html">Slideshow</a><br>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/howto/howto_js_sidenav.asp.html">Side Navigation</a><br>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/howto/howto_html_include.asp.html">HTML Includes</a><br>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/w3css/w3css_color_themes.asp.html">Color Palettes</a><br>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/w3css/w3css_code.asp.html">Code Coloring</a>
+</p>
+</div>
+
+<div class="sidesection">
+<h3>SHARE THIS PAGE</h3>
+<div class="w3-text-grey sharethis" style="visibility: visible;">
+<script>
+<!--
+try{
+loc=location.pathname;
+if (loc.toUpperCase().indexOf(".ASP")<0) loc=loc+"default.asp";
+txt='<a href="http://www.facebook.com/sharer.php?u=http://www.w3schools.com'+loc+'" target="_blank" title="Facebook"><span class="fa fa-facebook-square fa-2x"></span></a>';
+txt=txt+'<a href="http://twitter.com/home?status=Currently reading http://www.w3schools.com'+loc+'" target="_blank" title="Twitter"><span class="fa fa-twitter-square fa-2x"></span></a>';
+txt=txt+'<a href="https://plus.google.com/share?url=http://www.w3schools.com'+loc+'" target="_blank" title="Google+"><span class="fa fa-google-plus-square fa-2x"></span></a>';
+document.write(txt);
+} catch(e) {}
+//-->
+</script><a href="http://www.facebook.com/sharer.php?u=http://www.w3schools.com/courses/TW/DOCS/w3schools/html/html_images.asp.html" target="_blank" title="Facebook"><span class="fa fa-facebook-square fa-2x"></span></a><a href="http://twitter.com/home?status=Currently%20reading%20http://www.w3schools.com/courses/TW/DOCS/w3schools/html/html_images.asp.html" target="_blank" title="Twitter"><span class="fa fa-twitter-square fa-2x"></span></a><a href="https://plus.google.com/share?url=http://www.w3schools.com/courses/TW/DOCS/w3schools/html/html_images.asp.html" target="_blank" title="Google+"><span class="fa fa-google-plus-square fa-2x"></span></a>
+</div>
+</div>
+
+<div class="sidesection w3-text-grey sharethis" style="visibility: visible;">
+<a href="javascript:void(0);" onclick="clickFBLike()" title="Like W3Schools on Facebook">
+<span class="fa fa-thumbs-o-up fa-2x"></span></a>
+<div id="fblikeframe">
+<div id="popupframe"></div>
+<div id="popupDIV"></div>
+</div>
+</div>       
+
+</div>
+</div>
+<div class="footer w3-container w3-white">      
+
+<hr>
+<div style="overflow:auto">
+<!-- BottomMediumRectangle -->
+<div class="bottomad" id="div-gpt-ad-1422003450156-0" style="">
+<script type="text/javascript">
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-0'); });
+</script>
+<div id="google_ads_iframe_/16833175/BottomMediumRectangle_0__container__" style="border: 0pt none; width: 300px; height: 0px;"></div></div>
+<!-- RightBottomMediumRectangle -->
+<div class="bottomad" id="div-gpt-ad-1422003450156-3" style="">
+<script type="text/javascript">
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-3'); });
+</script>
+<div id="google_ads_iframe_/16833175/RightBottomMediumRectangle_0__container__" style="border: 0pt none; width: 300px; height: 0px;"></div></div>
+</div>
+
+<hr>
+<div class="w3-row w3-center w3-small">
+<div class="w3-col l3 m3 s12">
+<a href="javascript:void(0);" onclick="displayError();return false" style="white-space:nowrap;">REPORT ERROR</a>
+</div>
+<div class="w3-col l3 m3 s12">
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html_images.asp.html" target="_blank" onclick="printPage();return false;">PRINT PAGE</a>
+</div>
+<div class="w3-col l3 m3 s12">
+<a href="http://www.w3schools.com/forum/default.asp" target="_blank">FORUM</a>
+</div>
+<div class="w3-col l3 m3 s12">
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/about/default.asp.html" target="_top">ABOUT</a>
+</div>
+</div>
+<hr>
+<div class="w3-light-grey w3-padding w3-center" id="err_form" style="display:none;">
+<span onclick="this.parentElement.style.display=&#39;none&#39;" class="w3-closebtn">×</span>     
+<h2>Your Suggestion:</h2>
+<form>
+<div class="w3-group">      
+<label for="err_email">Your E-mail:</label>
+<input class="w3-input" type="text" style="width:100%" id="err_email" name="err_email">
+</div>
+<div class="w3-group">      
+<label for="err_email">Page address:</label>
+<input class="w3-input" type="text" style="width:100%" id="err_url" name="err_url" disabled="disabled">
+</div>
+<div class="w3-group">
+<label for="err_email">Description:</label>
+<textarea rows="10" class="w3-input" id="err_desc" name="err_desc" style="width:100%;"></textarea>
+</div>
+<div class="form-group">        
+<button type="button" onclick="sendErr()">Submit</button>
+</div>
+<br>
+</form>
+</div>
+<div class="w3-container w3-light-grey w3-padding" id="err_sent" style="display:none;">
+<span onclick="this.parentElement.style.display=&#39;none&#39;" class="w3-closebtn">×</span>     
+<h2>Thank You For Helping Us!</h2>
+<p>Your message has been sent to W3Schools.</p>
+</div>
+
+<div class="w3-row w3-center w3-small">
+<div class="w3-col l3 m6 s12">
+<div class="top10">
+<h4>Top 10 Tutorials</h4>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/default.asp.html">HTML Tutorial</a><br>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/css/default.asp.html">CSS Tutorial</a><br>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/js/default.asp.html">JavaScript Tutorial</a><br>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/w3css/default.asp.html">W3.CSS Tutorial</a><br>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/bootstrap/default.asp.html">Bootstrap Tutorial</a><br>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/sql/default.asp.html">SQL Tutorial</a><br>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/php/default.asp.html">PHP Tutorial</a><br>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/jquery/default.asp.html">jQuery Tutorial</a><br>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/angular/default.asp.html">Angular Tutorial</a><br>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/xml/default.asp.html">XML Tutorial</a><br>
+</div>
+</div>
+<div class="w3-col l3 m6 s12">
+<div class="top10">
+<h4>Top 10 References</h4>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/tags/default.asp.html">HTML Reference</a><br>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/cssref/default.asp.html">CSS Reference</a><br>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/jsref/default.asp.html">JavaScript Reference</a><br>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/w3css/w3css_references.asp.html">W3.CSS Reference</a><br>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/browsers/default.asp.html">Browser Statistics</a><br>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/php/php_ref_array.asp.html">PHP Reference</a><br>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/colors/colors_names.asp.html">HTML Colors</a><br>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/charsets/default.asp.html">HTML Character Sets</a><br>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/jquery/jquery_ref_selectors.asp.html">jQuery Reference</a><br>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/angular/angular_ref_directives.asp.html">AngularJS Reference</a><br>
+</div>
+</div>
+<div class="w3-col l3 m6 s12">
+<div class="top10">
+<h4>Top 10 Examples</h4>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html_examples.asp.html">HTML Examples</a><br>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/css/css_examples.asp.html">CSS Examples</a><br>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/js/js_examples.asp.html">JavaScript Examples</a><br>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/w3css/w3css_examples.asp.html">W3.CSS Examples</a><br>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/js/js_dom_examples.asp.html">HTML DOM Examples</a><br>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/php/php_examples.asp.html">PHP Examples</a><br>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/jquery/jquery_examples.asp.html">jQuery Examples</a><br>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/asp/asp_examples.asp.html">ASP Examples</a><br>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/xml/xml_examples.asp.html">XML Examples</a><br>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/svg/svg_examples.asp.html">SVG Examples</a>
+</div>
+</div>
+<div class="w3-col l3 m6 s12">
+<div class="top10">
+<h4>Web Certificates</h4>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/cert/default.asp.html">HTML Certificate</a><br>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/cert/default.asp.html">HTML5 Certificate</a><br>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/cert/default.asp.html">CSS Certificate</a><br>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/cert/default.asp.html">JavaScript Certificate</a><br>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/cert/default.asp.html">jQuery Certificate</a><br>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/cert/default.asp.html">PHP Certificate</a><br>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/cert/default.asp.html">Bootstrap Certificate</a><br>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/cert/default.asp.html">XML Certificate</a><br>
+</div>
+</div>        
+</div>        
+
+<hr>
+<div class="w3-center w3-small w3-opacity">
+W3Schools is optimized for learning, testing, and training. Examples might be simplified to improve reading and basic understanding.
+Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot warrant full correctness of all content.
+While using this site, you agree to have read and accepted our <a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/about/about_copyright.asp.html">terms of use</a>,
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/about/about_privacy.asp.html">cookie and privacy policy</a>.
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/about/about_copyright.asp.html">Copyright 1999-2016</a> by Refsnes Data. All Rights Reserved.<br>
+ <a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/w3css/index.html">Powered by W3.CSS</a>.<br><br>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/index.html">
+<img style="width:150px;height:28px;border:0" src="./HTML Images_files/w3schoolscom_gray.gif" alt="W3Schools.com"></a>
+</div>
+<br><br>
+</div>
+</div>
+</div>
+
+<div id="nav_tutorials_content" style="display:none;">
+<span onclick="w3_close_nav(&quot;tutorials&quot;)" class="w3-closebtn w3-xlarge">×</span>
+<div class="w3-row-padding">
+<div class="w3-col l2 m4">
+<h3>HTML/CSS</h3>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/default.asp.html">Learn HTML</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/css/default.asp.html">Learn CSS</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/w3css/default.asp.html">Learn W3.CSS</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/colors/default.asp.html">Learn Colors</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/bootstrap/default.asp.html">Learn Bootstrap</a>
+</div>
+<div class="w3-col l2 m4">  
+<h3>JavaScript</h3>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/js/default.asp.html">Learn JavaScript</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/jquery/default.asp.html">Learn jQuery</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/jquerymobile/default.asp.html">Learn jQueryMobile</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/appml/default.asp.html">Learn AppML</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/angular/default.asp.html">Learn AngularJS</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/ajax/default.asp.html">Learn AJAX</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/json/default.asp.html">Learn JSON</a>
+</div>
+<div class="w3-col l2 m4">   
+<h3>HTML Graphics</h3>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/canvas/default.asp.html">Learn Canvas</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/svg/default.asp.html">Learn SVG</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/icons/default.asp.html">Learn Icons</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/googleapi/default.asp.html">Learn Google Maps</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/games/default.asp.html">Learn HTML Games</a>
+</div>
+<div class="w3-col l2 m4">
+<h3>Server Side</h3>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/sql/default.asp.html">Learn SQL</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/php/default.asp.html">Learn PHP</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/asp/default.asp.html">Learn ASP</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/aspnet/default.asp.html">Learn ASP.NET</a>
+</div>
+<div class="w3-col l2 m4">
+<h3>Web Building</h3>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/website/default.asp.html">Web Building</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/browsers/default.asp.html">Web Statistics</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/cert/default.asp.html">Web Certificates</a>
+</div>
+<div class="w3-col l2 m4">
+<h3>XML Tutorials</h3>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/xml/default.asp.html">Learn XML</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/xsl/default.asp.html">Learn XSLT</a>
+</div>
+</div>
+</div>
+<div id="nav_references_content" style="display:none;">
+<span onclick="w3_close_nav(&quot;references&quot;)" class="w3-closebtn w3-xlarge">×</span>
+<div class="w3-row-padding">
+<div class="w3-col l2 m4">
+<h3>HTML</h3>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/tags/default.asp.html">HTML Tag Reference</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/tags/ref_eventattributes.asp.html">HTML Event Reference</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/colors/default.asp.html">HTML Color Reference</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/tags/ref_attributes.asp.html">HTML Attribute Reference</a>
+</div>
+<div class="w3-col l2 m4">
+<h3>CSS</h3>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/cssref/default.asp.html">CSS Reference</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/cssref/css_selectors.asp.html">CSS Selector Reference</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/w3css/w3css_references.asp.html">W3.CSS Reference</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/bootstrap/bootstrap_ref_css_text.asp.html">Bootstrap Reference</a>
+</div>
+<div class="w3-col l2 m4">
+<h3>JavaScript</h3>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/jsref/default.asp.html">JavaScript Reference</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/jsref/default.asp.html">HTML DOM Reference</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/jquery/jquery_ref_selectors.asp.html">jQuery Reference</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/jquerymobile/jquerymobile_ref_data.asp.html">jQuery Mobile Reference</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/angular/angular_ref_directives.asp.html">AngularJS Reference</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/googleAPI/google_maps_ref.asp.html">Google Maps Reference</a>
+</div>
+<div class="w3-col l2 m4">
+<h3>Server Side</h3>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/php/php_ref_array.asp.html">PHP Reference</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/sql/sql_quickref.asp.html">SQL Reference</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/asp/asp_ref_response.asp.html">ASP Reference</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/aspnet/webpages_ref_classes.asp.html">Razor Reference</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/aspnet/aspnet_intro.asp.html">ASP.NET Reference</a>
+</div>
+<div class="w3-col l2 m4">
+<h3>XML</h3>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/xml/dom_nodetype.asp.html">XML Reference</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/xsl/xsl_w3celementref.asp.html">XSLT Reference</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/xml/schema_elements_ref.asp.html">XML Schema Reference</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/svg/svg_reference.asp.html">SVG Reference</a>
+</div>
+<div class="w3-col l2 m4">
+<h3>Charsets</h3>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/charsets/default.asp.html">HTML Character Sets</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/charsets/ref_html_ascii.asp.html">HTML ASCII</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/charsets/ref_html_ansi.asp.html">HTML ANSI</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/charsets/ref_html_ansi.asp.html">HTML Windows-1252</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/charsets/ref_html_8859.asp.html">HTML ISO-8859-1</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/charsets/ref_html_symbols.asp.html">HTML Symbols</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/charsets/ref_html_utf8.asp.html">HTML UTF-8</a>
+</div>
+</div>
+</div>
+<div id="nav_examples_content" style="display:none;">
+<span onclick="w3_close_nav(&quot;examples&quot;)" class="w3-closebtn w3-xlarge">×</span>
+<div class="w3-row-padding">
+<div class="w3-col l3 m6">
+<h3>HTML/CSS</h3>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/html/html_examples.asp.html">HTML Examples</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/css/css_examples.asp.html">CSS Examples</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/w3css/w3css_examples.asp.html">W3.CSS Examples</a>
+</div>
+<div class="w3-col l3 m6">
+<h3>JavaScript</h3>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/js/js_examples.asp.html" target="_top">JavaScript Examples</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/js/js_dom_examples.asp.html" target="_top">HTML DOM Examples</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/jquery/jquery_examples.asp.html" target="_top">jQuery Examples</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/jquerymobile/jquerymobile_examples.asp.html" target="_top">jQuery Mobile Examples</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/angular/angular_examples.asp.html" target="_top">AngularJS Examples</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/ajax/ajax_examples.asp.html" target="_top">AJAX Examples</a>
+</div>
+<div class="w3-col l3 m6">
+<h3>Server Side</h3>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/php/php_examples.asp.html" target="_top">PHP Examples</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/asp/asp_examples.asp.html" target="_top">ASP Examples</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/aspnet/webpages_examples.asp.html" target="_top">Razor Examples</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/aspnet/aspnet_examples.asp.html" target="_top">.NET Examples</a>
+</div>
+<div class="w3-col l3 m6">
+<h3>XML</h3>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/xml/xml_examples.asp.html" target="_top">XML Examples</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/xsl/xsl_examples.asp.html" target="_top">XSL Examples</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/xsl/xsl_examples.asp.html" target="_top">XSLT Examples</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/xsl/xpath_examples.asp.html" target="_top">XPath Examples</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/xml/schema_example.asp.html" target="_top">XML Schema Examples</a>
+<a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/svg/svg_examples.asp.html" target="_top">SVG Examples</a>
+</div>
+</div>
+</div>
+<div id="nav_translate_content" style="display:none">
+<span onclick="w3_close_nav(&quot;translate&quot;)" class="w3-closebtn w3-xlarge">×</span>
+<br><br>Translate w3schools.com:
+<div id="google_translate_element"></div>
+<br>
+</div>
+<div id="nav_search_content" style="display:none">
+<span onclick="w3_close_nav(&quot;search&quot;)" class="w3-closebtn w3-xlarge">×</span>
+<br><br>
+<div class="searchdiv">
+Search w3schools.com:
+<div id="googleSearch"><div id="___gcse_0"><div class="gsc-control-cse gsc-control-cse-en"><div class="gsc-control-wrapper-cse" dir="ltr"><form class="gsc-search-box gsc-search-box-tools" accept-charset="utf-8"><table cellspacing="0" cellpadding="0" class="gsc-search-box"><tbody><tr><td class="gsc-input"><div class="gsc-input-box" id="gsc-iw-id1"><table cellspacing="0" cellpadding="0" id="gs_id50" class="gstl_50 gsc-input" style="width: 100%; padding: 0px;"><tbody><tr><td id="gs_tti50" class="gsib_a"><input autocomplete="off" type="text" size="10" class="gsc-input" name="search" title="search" id="gsc-i-id1" dir="ltr" spellcheck="false" style="width: 100%; padding: 0px; border: none; margin: 0px; height: auto; background: url(&quot;https://www.google.com/cse/static/images/1x/en/branding.png&quot;) left center no-repeat rgb(255, 255, 255); outline: none;"></td><td class="gsib_b"><div class="gsst_b" id="gs_st50" dir="ltr"><a class="gsst_a" href="javascript:void(0)" title="Clear search box" role="button" style="display: none;"><span class="gscb_a" id="gs_cb50" aria-hidden="true">×</span></a></div></td></tr></tbody></table></div></td><td class="gsc-search-button"><button class="gsc-search-button gsc-search-button-v2"><svg width="13" height="13" viewBox="0 0 13 13"><title>search</title><path d="m4.8495 7.8226c0.82666 0 1.5262-0.29146 2.0985-0.87438 0.57232-0.58292 0.86378-1.2877 0.87438-2.1144 0.010599-0.82666-0.28086-1.5262-0.87438-2.0985-0.59352-0.57232-1.293-0.86378-2.0985-0.87438-0.8055-0.010599-1.5103 0.28086-2.1144 0.87438-0.60414 0.59352-0.8956 1.293-0.87438 2.0985 0.021197 0.8055 0.31266 1.5103 0.87438 2.1144 0.56172 0.60414 1.2665 0.8956 2.1144 0.87438zm4.4695 0.2115 3.681 3.6819-1.259 1.284-3.6817-3.7 0.0019784-0.69479-0.090043-0.098846c-0.87973 0.76087-1.92 1.1413-3.1207 1.1413-1.3553 0-2.5025-0.46363-3.4417-1.3909s-1.4088-2.0686-1.4088-3.4239c0-1.3553 0.4696-2.4966 1.4088-3.4239 0.9392-0.92727 2.0864-1.3969 3.4417-1.4088 1.3553-0.011889 2.4906 0.45771 3.406 1.4088 0.9154 0.95107 1.379 2.0924 1.3909 3.4239 0 1.2126-0.38043 2.2588-1.1413 3.1385l0.098834 0.090049z"></path></svg></button></td><td class="gsc-clear-button"><div class="gsc-clear-button" title="clear results">&nbsp;</div></td></tr></tbody></table></form><div class="gsc-results-wrapper-overlay"><div class="gsc-results-close-btn" tabindex="0"></div><div class="gsc-positioningWrapper"><div class="gsc-tabsAreaInvisible"><div aria-label="refinement" role="tab" class="gsc-tabHeader gsc-inline-block gsc-tabhActive">Custom Search</div><span class="gs-spacer"> </span></div></div><div class="gsc-positioningWrapper"><div class="gsc-tabsAreaInvisible"></div></div><div class="gsc-above-wrapper-area-invisible"><table cellspacing="0" cellpadding="0" class="gsc-above-wrapper-area-container"><tbody><tr><td class="gsc-result-info-container"><div class="gsc-result-info-invisible"></div></td></tr></tbody></table></div><div class="gsc-adBlockInvisible"></div><div class="gsc-wrapper"><div class="gsc-adBlockInvisible"></div><div class="gsc-resultsbox-invisible"><div class="gsc-resultsRoot gsc-tabData gsc-tabdActive"><div><div class="gsc-expansionArea"></div></div></div></div></div></div><div class="gsc-modal-background-image" tabindex="0"></div></div></div></div></div>
+</div>
+<br>
+</div>
+<script src="./HTML Images_files/w3schools_footer.js.download"></script>
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>  
+<![endif]-->
+
+<script type="text/javascript" id="add_privacy_banner" src="./HTML Images_files/add_privacy_banner_nocookie.js.download"></script><table cellspacing="0" cellpadding="0" class="gstl_50 gssb_c" style="width: 2px; display: none; top: 3px; position: absolute; left: -1px;"><tbody><tr><td class="gssb_f"></td><td class="gssb_e" style="width: 100%;"></td></tr></tbody></table></body></html>

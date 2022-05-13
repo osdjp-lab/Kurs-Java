@@ -1,0 +1,14 @@
+Skończone:
+1, ...
+
+Przegląd:
+3, 3_I (3.1), 3_IV (3.8), 4, 5_1, 7_I
+
+TODO:
+2     - Macierz - diagonalna
+2     - BigLiczba - implementacja i metody (czyPodzielna, czyPierwsza)
+6     - całości do zrobienia
+7_II  - Kalkulator GUI [7.4, 7.5, 7.6]
+7_III - Całość
+8     - Całość
+9     - Całość
